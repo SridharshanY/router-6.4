@@ -1,9 +1,9 @@
-import React from 'react'
+import error from '../images/404.png'
 
 const Error = () => {
   return (
     <div>
-      Error
+      <img src={error} className='w-full' alt="" />
     </div>
   )
 }
