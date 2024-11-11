@@ -1,15 +1,16 @@
 import React from 'react'
 import Menu from '../components/Menu'
 import Back from '../components/Back'
+import { Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
   return (
     <div>
       <Menu />
-      <main>
-        <h1>Content</h1>
+      <main className='flex flex-col justify-center items-center'>
+        <Outlet />
+        <Back />
       </main>
-      <Back />
     </div>
   )
 }
