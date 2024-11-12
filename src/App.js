@@ -4,10 +4,12 @@ import User from './pages/User'
 import UserDetail from './pages/UserDetail'
 import AppLayout from "./pages/AppLayout";
 import { getAllUser, getSelectedUser } from "./services/apiUsers";
+import Error from "./components/Error";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
