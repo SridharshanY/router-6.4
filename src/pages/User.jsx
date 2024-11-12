@@ -5,7 +5,6 @@ import Card from '../components/Card'
 const User = () => {
 
   const users = useLoaderData()
-  console.log(users)
 
   return (
     <div className='flex flex-row flex-wrap justify-evenly gap-y-8'>
