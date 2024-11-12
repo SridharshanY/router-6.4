@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import User from './pages/User'
 import UserDetail from './pages/UserDetail'
 import AppLayout from "./pages/AppLayout";
+import { getAllUser, getSelectedUser } from "./services/apiUsers";
 
 const router = createBrowserRouter([
   {
@@ -10,15 +11,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
       },
       {
         path: '/user',
-        element: <User />
+        element: <User />,
+        loader: getAllUser
       },
       {
         path: '/user/:id',
-        element: <UserDetail />
+        element: <UserDetail />,
+        loader: getSelectedUser
       }
     
     ]

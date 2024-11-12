@@ -1,4 +1,5 @@
 import React from 'react'
+import { getAllUser, getSelectedUser } from '../services/apiUsers'
 
 const Home = () => {
   return (
@@ -8,5 +9,15 @@ const Home = () => {
     </div>
   )
 }
+
+// export const loader = async() =>{
+//   const users = await getAllUser()
+//   return users
+// }
+
+// export const singleLoader = async() =>{
+//   const users = await getSelectedUser()
+//   return users
+// }
 
 export default Home
